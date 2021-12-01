@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: generararchivos
+
+valoresAad:
+  AzureAd:
+    AuthenticationMode: serviceprincipal
+    AuthorityUri: https://login.microsoftonline.com/organizations/
+    ClientId: f82d63c1-cb80-48f2-a1e1-f5ba11d98540
+    TenantId: 27864e10-5be4-4d4f-adb5-bbab512029e8
+    Scope: https://analysis.windows.net/powerbi/api/.default
+    ClientSecret: 8fL7Q~z1BgMqyadZLczN1G-QyngRk3ps3DLjU
+  PowerBI:
+    WorkspaceId: 37821e87-b56b-445a-968d-69f6acf60053
+    ReportId: cab5bb6a-4cbb-4843-a045-2ea4069a3bd6
+#  # Database
+#  datasource:
+#    url: jdbc:oracle:thin:@ic-rds-pru-electronica-vpc60c.ctosofe9xkn4.us-east-1.rds.amazonaws.com:1521:PRUELEC
+#    username: SABER3A11_PRUE
+#    password: Icfes2020+1
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#
+#  # JPA properties
+#  jpa:
+#    show-sql: true
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        jdbc:
+#          timezone: America/Bogota
+#        hbm2ddl:
+#          '[import_files_sql_extractor]': org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
